@@ -1,0 +1,5 @@
+(declare-const AisKnight Bool)
+(declare-const BisKnight Bool)
+(assert (= AisKnight (or (not AisKnight) BisKnight)))
+(check-sat)
+(get-model)
